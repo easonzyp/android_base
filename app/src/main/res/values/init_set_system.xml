@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_host">101.201.196.220</string>
+    <string name="sys_api_full_url">http://101.201.196.220/www/api.php</string>
+</resources>

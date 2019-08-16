@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.develop.wiseisland.android"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':SmartRefreshLayout')
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.squareup.okhttp3:okhttp:3.12.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.foamtrace:photopicker:1.0'
+    compile 'com.blankj:utilcode:1.12.6'
+    compile 'com.android.support:recyclerview-v7:27.1.1'
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
+    compile 'com.youth.banner:banner:1.4.10'
+}
